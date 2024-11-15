@@ -1,0 +1,19 @@
+> go version
+go version go1.23.3 windows/amd64
+> go test -bench . -count 5
+goos: windows
+goarch: amd64
+pkg: benchmark
+cpu: AMD Ryzen 7 5800H with Radeon Graphics
+BenchmarkFibonacci-16           207993934                5.825 ns/op
+BenchmarkFibonacci-16           206237622                5.753 ns/op
+BenchmarkFibonacci-16           209830744                5.898 ns/op
+BenchmarkFibonacci-16           208391834                5.752 ns/op
+BenchmarkFibonacci-16           209606619                5.889 ns/op
+BenchmarkEmpty-16               1000000000               0.2422 ns/op
+BenchmarkEmpty-16               1000000000               0.2423 ns/op
+BenchmarkEmpty-16               1000000000               0.2427 ns/op
+BenchmarkEmpty-16               1000000000               0.2460 ns/op
+BenchmarkEmpty-16               1000000000               0.2460 ns/op
+PASS
+ok      benchmark       10.750s
