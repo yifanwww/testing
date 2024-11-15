@@ -1,1 +1,4 @@
+BenchmarkDotNet.Artifacts
+bin
+obj
 node_modules
