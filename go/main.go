@@ -1,15 +1,18 @@
-package benchmark
+package main
 
 func empty() {}
 
-func fibonacci() int {
-	var a int = 0
+func fibonacci(n int) int {
+	if n == 0 || n == 1 {
+		return 1
+	}
+	var a int = 1
 	var b int = 1
-	var c int
-	for a < 10000 {
-		c = a + b
+	var c int = 2
+	for i := 4; i <= n; i ++ {
 		a = b
 		b = c
+		c = a + b
 	}
-	return a
+	return c
 }

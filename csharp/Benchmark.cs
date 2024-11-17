@@ -9,14 +9,14 @@ public class Program
 {
     public static void Main()
     {
-        BenchmarkRunner.Run<BenchmarkExample>();
+        BenchmarkRunner.Run<Benchmark>();
     }
 }
 
 
 [IterationTime(500)]
 [Config(typeof(Config))]
-public class BenchmarkExample
+public class Benchmark
 {
     private class Config : ManualConfig
     {
@@ -26,17 +26,22 @@ public class BenchmarkExample
         }
     }
 
-    [Benchmark] public void Empty() {}
+    [Benchmark]
+    public void Empty() {}
 
-    [Benchmark] public Int32 Fabonacci() {
-        Int32 a = 0;
-        Int32 b = 1;
-        Int32 c;
-        while (a < 10000) {
-            c = a + b;
+    [Benchmark]
+    [Arguments(4)]
+    [Arguments(20)]
+    public int Fibonacci(int n) {
+        if (n == 1 || n == 2) return 1;
+        int a = 1;
+        int b = 1;
+        int c = 2;
+        for (int i = 4; i <= n; i++) {
             a = b;
             b = c;
+            c = a + b;
         }
-        return a;
+        return c;
     }
 }

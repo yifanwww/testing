@@ -1,4 +1,5 @@
-BenchmarkDotNet.Artifacts
-bin
-obj
-node_modules
+/csharp/BenchmarkDotNet.Artifacts
+/csharp/bin
+/csharp/obj
+/nodejs/node_modules
+/rust/target

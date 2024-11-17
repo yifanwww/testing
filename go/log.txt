@@ -5,15 +5,20 @@ goos: windows
 goarch: amd64
 pkg: benchmark
 cpu: AMD Ryzen 7 5800H with Radeon Graphics
-BenchmarkFibonacci-16           207993934                5.825 ns/op
-BenchmarkFibonacci-16           206237622                5.753 ns/op
-BenchmarkFibonacci-16           209830744                5.898 ns/op
-BenchmarkFibonacci-16           208391834                5.752 ns/op
-BenchmarkFibonacci-16           209606619                5.889 ns/op
-BenchmarkEmpty-16               1000000000               0.2422 ns/op
-BenchmarkEmpty-16               1000000000               0.2423 ns/op
-BenchmarkEmpty-16               1000000000               0.2427 ns/op
-BenchmarkEmpty-16               1000000000               0.2460 ns/op
-BenchmarkEmpty-16               1000000000               0.2460 ns/op
+BenchmarkEmpty-16               1000000000               0.2489 ns/op
+BenchmarkEmpty-16               1000000000               0.2450 ns/op
+BenchmarkEmpty-16               1000000000               0.2449 ns/op
+BenchmarkEmpty-16               1000000000               0.2478 ns/op
+BenchmarkEmpty-16               1000000000               0.2476 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9990 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9937 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9731 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9888 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9756 ns/op
+BenchmarkFibonacci20-16         135236973                8.738 ns/op
+BenchmarkFibonacci20-16         135088112                8.755 ns/op
+BenchmarkFibonacci20-16         134148418                8.948 ns/op
+BenchmarkFibonacci20-16         134214420                9.062 ns/op
+BenchmarkFibonacci20-16         134389183                8.872 ns/op
 PASS
-ok      benchmark       10.750s
+ok      benchmark       17.719s
