@@ -1,4 +1,4 @@
-pub fn empty() -> () {}
+pub fn noop() -> () {}
 
 pub fn fibonacci(n: i32) -> i32 {
     match n {

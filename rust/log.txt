@@ -16,17 +16,17 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
      Running benches\benchmark.rs (target\release\deps\benchmark-36d6901ee90443a1.exe)
 Gnuplot not found, using plotters backend
-Benchmarking empty: AnalyzingCriterion.rs ERROR: At least one measurement of benchmark empty took zero time per iteration. This should not be possible. If using iter_custom, please verify that your routine is correctly measured.
+Benchmarking noop: AnalyzingCriterion.rs ERROR: At least one measurement of benchmark noop took zero time per iteration. This should not be possible. If using iter_custom, please verify that your routine is correctly measured.
 
-fibonacci 4             time:   [1.7091 ns 1.7098 ns 1.7108 ns]
-Found 10 outliers among 100 measurements (10.00%)
-  4 (4.00%) low mild
+fibonacci 4             time:   [1.7134 ns 1.7145 ns 1.7156 ns]
+Found 18 outliers among 100 measurements (18.00%)
+  7 (7.00%) low severe
+  5 (5.00%) high mild
+  6 (6.00%) high severe
+
+fibonacci 20            time:   [2.4494 ns 2.4502 ns 2.4511 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  1 (1.00%) low severe
+  1 (1.00%) low mild
   2 (2.00%) high mild
-  4 (4.00%) high severe
-
-fibonacci 20            time:   [2.4494 ns 2.4551 ns 2.4664 ns]
-Found 14 outliers among 100 measurements (14.00%)
-  4 (4.00%) low severe
-  2 (2.00%) low mild
-  4 (4.00%) high mild
-  4 (4.00%) high severe
+  8 (8.00%) high severe

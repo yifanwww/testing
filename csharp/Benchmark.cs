@@ -27,7 +27,7 @@ public class Benchmark
     }
 
     [Benchmark]
-    public void Empty() {}
+    public void Noop() {}
 
     [Benchmark]
     [Arguments(4)]

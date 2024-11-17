@@ -5,20 +5,20 @@ goos: windows
 goarch: amd64
 pkg: benchmark
 cpu: AMD Ryzen 7 5800H with Radeon Graphics
-BenchmarkEmpty-16               1000000000               0.2489 ns/op
-BenchmarkEmpty-16               1000000000               0.2450 ns/op
-BenchmarkEmpty-16               1000000000               0.2449 ns/op
-BenchmarkEmpty-16               1000000000               0.2478 ns/op
-BenchmarkEmpty-16               1000000000               0.2476 ns/op
-BenchmarkFibonacci4-16          1000000000               0.9990 ns/op
-BenchmarkFibonacci4-16          1000000000               0.9937 ns/op
-BenchmarkFibonacci4-16          1000000000               0.9731 ns/op
-BenchmarkFibonacci4-16          1000000000               0.9888 ns/op
-BenchmarkFibonacci4-16          1000000000               0.9756 ns/op
-BenchmarkFibonacci20-16         135236973                8.738 ns/op
-BenchmarkFibonacci20-16         135088112                8.755 ns/op
-BenchmarkFibonacci20-16         134148418                8.948 ns/op
-BenchmarkFibonacci20-16         134214420                9.062 ns/op
-BenchmarkFibonacci20-16         134389183                8.872 ns/op
+BenchmarkNoop-16                1000000000               0.2443 ns/op
+BenchmarkNoop-16                1000000000               0.2434 ns/op
+BenchmarkNoop-16                1000000000               0.2467 ns/op
+BenchmarkNoop-16                1000000000               0.2500 ns/op
+BenchmarkNoop-16                1000000000               0.2433 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9729 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9738 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9815 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9720 ns/op
+BenchmarkFibonacci4-16          1000000000               0.9817 ns/op
+BenchmarkFibonacci20-16         137511702                8.729 ns/op
+BenchmarkFibonacci20-16         137705007                8.715 ns/op
+BenchmarkFibonacci20-16         137417534                8.732 ns/op
+BenchmarkFibonacci20-16         137065864                8.909 ns/op
+BenchmarkFibonacci20-16         134912392                8.715 ns/op
 PASS
-ok      benchmark       17.719s
+ok      benchmark       17.622s

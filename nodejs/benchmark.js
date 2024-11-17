@@ -1,6 +1,6 @@
 import { Bench } from 'tinybench';
 
-function empty() {}
+function noop() {}
 
 function fibonacci(n) {
     if (n === 1 || n === 2) return 1;
@@ -18,7 +18,7 @@ function fibonacci(n) {
 const bench = new Bench({ time: 500 });
 
 bench
-    .add('empty', () => empty())
+    .add('noop', () => noop())
     .add('fibonacci 4', () => fibonacci(4))
     .add('fibonacci 20', () => fibonacci(20));
 
