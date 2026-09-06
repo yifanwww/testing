@@ -8,6 +8,7 @@ Each branch is a standalone reproduction for a specific issue. Visit the branch 
 
 ## Reproductions
 
-| Branch      | Project                                                     | Issue                                                                      |
-| ----------- | ----------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `tinybench` | [tinylibs/tinybench](https://github.com/tinylibs/tinybench) | [tinylibs/tinybench#189](https://github.com/tinylibs/tinybench/issues/189) |
+| Branch                  | Project                                            | Issue                                                               |
+| ----------------------- | -------------------------------------------------- | ------------------------------------------------------------------- |
+| `commander-in-electron` | [commander.js](https://github.com/tj/commander.js) | [commander.js#2603](https://github.com/tj/commander.js/issues/2603) |
+| `tinybench`             | [tinybench](https://github.com/tinylibs/tinybench) | [tinybench#189](https://github.com/tinylibs/tinybench/issues/189)   |

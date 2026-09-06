@@ -1,1 +1,4 @@
 /.vscode
+/cases/*/node_modules
+/cases/*/release
+/node_modules
