@@ -4,7 +4,9 @@ For issue: https://github.com/tj/commander.js/issues/2603
 
 ## Testing Cases
 
-### `main`
+The test code is in `cases/` folder. The following is a summary of the results.
+
+### `cases/main`
 
 Checks `process.argv` in Electron main process
 
@@ -47,7 +49,7 @@ Run the packaged app directly:
 { args: [], options: { verbose: true } }
 ```
 
-### `spawn_runasnode`
+### `cases/spawn_runasnode`
 
 Checks `process.argv` in child process created by `child_process.spawn` with env var `ELECTRON_RUN_AS_NODE=1`
 
@@ -83,7 +85,7 @@ Run the packaged app directly:
 }
 ```
 
-### `spawn_node`
+### `cases/spawn_node`
 
 Checks `process.argv` in child process created by `child_process.spawn` using Node.js
 
@@ -113,7 +115,7 @@ Run the packaged app directly:
 { args: [], options: { verbose: true } }
 ```
 
-### `child_process_fork`
+### `cases/child_process_fork`
 
 Checks `process.argv` in child process created by `child_process.fork`
 
@@ -149,7 +151,7 @@ Run the packaged app directly:
 }
 ```
 
-### `utility_process_fork`
+### `cases/utility_process_fork`
 
 Checks `process.argv` in child process created by `utility_process.fork`
 
@@ -185,7 +187,7 @@ Run the packaged app directly:
 }
 ```
 
-### `node_worker`
+### `cases/node_worker`
 
 Checks `process.argv` in child process created by Node.js `worker_threads` API
 
