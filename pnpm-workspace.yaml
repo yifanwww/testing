@@ -1,0 +1,5 @@
+allowBuilds:
+  electron-winstaller: false
+
+packages:
+  - cases/*

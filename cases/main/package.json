@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "version": "0.0.0",
+  "description": "",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dist:mac": "electron-builder build --config electron-builder.yaml --publish never --mac",
+    "dist:win": "electron-builder build --config electron-builder.yaml --publish never --win",
+    "run-app": "node scripts/run-app.mjs",
+    "run-asar": "node scripts/run-asar.mjs",
+    "run-unpackaged": "electron . --verbose"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
+}

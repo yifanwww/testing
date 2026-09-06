@@ -1,0 +1,20 @@
+{
+  "name": "testing",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": "",
+  "private": true,
+  "packageManager": "pnpm@11.21.0+sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1",
+  "scripts": {
+    "postinstall": "install-electron"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "electron": "43.4.1",
+    "electron-builder": "^26.15.3"
+  }
+}

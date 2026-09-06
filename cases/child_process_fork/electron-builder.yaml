@@ -1,0 +1,21 @@
+appId: testing
+productName: testing
+directories:
+  output: release
+artifactName: ${name}-${arch}.${ext}
+files:
+  - child.js
+  - main.js
+  - package.json
+asarUnpack:
+  - child.js
+  - node_modules/commander/**
+win:
+  target:
+    - target: nsis
+      arch: x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  target: dmg
