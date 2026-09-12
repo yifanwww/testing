@@ -1,0 +1,20 @@
+{
+  "name": "testing_renderer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "out/main/index.js",
+  "private": true,
+  "scripts": {
+    "build": "electron-vite build",
+    "dev": "electron-vite dev",
+    "dist:mac": "pnpm run build && electron-builder build --config electron-builder.yaml --publish never --mac",
+    "dist:win": "pnpm run build && electron-builder build --config electron-builder.yaml --publish never --win",
+    "run-app": "node scripts/run-app.mjs"
+  },
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "electron-vite": "^5.0.0"
+  }
+}

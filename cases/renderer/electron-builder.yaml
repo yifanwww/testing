@@ -1,0 +1,17 @@
+appId: testing
+productName: testing
+directories:
+  output: release
+artifactName: ${name}-${arch}.${ext}
+files:
+  - out/**
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch: x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  target: dmg
