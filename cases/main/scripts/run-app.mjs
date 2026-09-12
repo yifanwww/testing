@@ -24,7 +24,7 @@ if (!existsSync(executable)) {
   process.exit(1);
 }
 
-const child = spawn(executable, ['--verbose'], { stdio: 'inherit' });
+const child = spawn(executable, ['--verbose', 'ARG'], { stdio: 'inherit' });
 child.on('exit', (code) => {
   process.exit(code ?? 0);
 });

@@ -8,7 +8,7 @@
     "dist:mac": "electron-builder build --config electron-builder.yaml --publish never --mac",
     "dist:win": "electron-builder build --config electron-builder.yaml --publish never --win",
     "run-app": "node scripts/run-app.mjs",
-    "run-unpackaged": "electron . --verbose"
+    "run-unpackaged": "electron ."
   },
   "dependencies": {
     "commander": "^15.0.0"

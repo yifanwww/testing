@@ -8,7 +8,7 @@ console.log({
   'process.env.ELECTRON_RUN_AS_NODE': process.env.ELECTRON_RUN_AS_NODE,
 });
 
-const program = new Command().argument('[input]').option('--verbose');
+const program = new Command().argument('[input...]').option('--verbose');
 
 program.parse();
 

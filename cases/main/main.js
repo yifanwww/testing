@@ -2,7 +2,7 @@ const { Command } = require('commander');
 const { app } = require('electron');
 
 app.whenReady().then(() => {
-  const program = new Command().argument('[input]').option('--verbose');
+  const program = new Command().argument('[input...]').option('--verbose');
 
   console.log({
     'process.argv': process.argv,

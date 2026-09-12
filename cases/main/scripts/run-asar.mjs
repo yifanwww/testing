@@ -23,4 +23,4 @@ if (!existsSync(asarPath)) {
   process.exit(1);
 }
 
-execFileSync(electronBin, [asarPath, '--verbose'], { stdio: 'inherit' });
+execFileSync(electronBin, [asarPath, '--verbose', 'ARG'], { stdio: 'inherit' });
