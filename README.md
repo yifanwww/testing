@@ -129,6 +129,8 @@ Run the packaged app directly (`pnpm --filter spawn_node run-app`):
 
 Checks `process.argv` in child process created by `child_process.fork`
 
+According to [Electron Fuses #runAsNode](#https://www.electronjs.org/docs/latest/tutorial/fuses#runasnode), `child_process.fork` depends on environment variable `ELECTRON_RUN_AS_NODE` (it internally sets the env var to the child process).
+
 Run the unpackaged app (`pnpm --filter child_process_fork run-unpackaged`):
 
 ```js
